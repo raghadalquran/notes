@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/raghadalquran/notes/issues"
   },
-  "homepage": "https://github.com/raghadalquran/notes#readme"
+  "homepage": "https://github.com/raghadalquran/notes#readme",
+  "dependencies": {
+    "minimist": "^1.2.5"
+  }
 }
