@@ -5,46 +5,25 @@
 ### Author: Raghad Al-Quran
 
 ### Links and Resources
-
 - [submission PR]()
-- [front-end application]()
-
-### Documentaion
-
-- [jsdoc]() 
 
 ### Modules
 #### `Node.js`
 
-##### Exported values and methods
-###### `isAlive(dead)=> boolean`
-Return true/false to indecate how the server works
-
-### Setup
-
-#### `.env` requirements (where applicable)
-
-
-i.e.
-
-- `PORT` - Port Number
+### Packages
+#### `minimist`
 
 #### How to initialize/run your application (where applicable)
-
-- e.g. `npm start`
-- Endpoint: '/'
-   - returns a boolean
-- Endpoint: '/docs'
-   - returns JSDoc Documentation Pages
-
-
-#### How to use your library (where applicable)
+- e.g. `node index.js --add 'My first NOTE'`
+- e.g. `node index.js -a 'My first NOTE'`
+- e.g. `node index.js --a 'My first NOTE'`
+- e.g. `./index.js --add 'My first NOTE'`
+- e.g. `./index.js -a 'My first NOTE'`
+- e.g. `./index.js --a 'My first NOTE'`
 
 #### Tests
 
-- Unit Tests: 'npm test'
-- Lint Tests: 'npm run lint'
+- Test: `./index.js (anything except [--add || -a || --a]) 'My first NOTE'` => 'error occurs'
 
 #### UML
-
 ![UML Diagram]()
