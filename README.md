@@ -5,7 +5,7 @@
 ### Author: Raghad Al-Quran
 
 ### Links and Resources
-- [submission PR](https://github.com/raghadalquran/notes/pull/1)
+- [submission PR](https://github.com/raghadalquran/notes/pull/2)
 
 ### Modules
 #### `Node.js`

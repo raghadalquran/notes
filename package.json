@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest --coverage",
     "lint-me": "eslint **/*.js"
+
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "homepage": "https://github.com/raghadalquran/notes#readme",
   "dependencies": {
     "eslint": "^7.0.0",
+    "lint": "^0.7.0",
     "minimist": "^1.2.5"
   },
   "devDependencies": {
