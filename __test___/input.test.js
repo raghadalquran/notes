@@ -1,33 +1,25 @@
 'use strict';
 
+const minimist = require('minimist');
 const Input = require('../lib/input.js');
 
-let testSchema = {
-  id: { type: 'number', required: true },
-  name: { type: 'string', required: true },
-};
-
-let inValidObjectA = {};
-
-let validObject = {
-  id: 3,
-  name: 'sarah',
-};
-
-let validator = new Input(testSchema);
+jest.mock('minimist');
+minimist.mockImplementation(() =>{
+  return {
+    add: 'hello',
+  };
+});
 
 describe('Input Module', () => {
-  it('if invalid objects , always return false', () => {
-    expect(validator.validate(inValidObjectA)).toBe(false);
+  it('if the command line and the data are valid', () => {
+    let noteObj = new Input();
+    expect(noteObj.valid()).toBeTruthy();
   });
-  it('if valid objects , return true', () => {
-    expect(validator.validate(validObject)).toBe(true);
-  });
-  it('.isString return false when not given a string', () => {
-    expect(validator.isString(3)).toBe(false);
-  });
-  it('.isString return true when given a string', () => {
-    expect(validator.isString('test')).toBe(true);
+  it('if the command line and the data are not valid', () => {
+    let noteObj = new Input();
+    noteObj.action = '';
+    noteObj.payload = '';
+    expect(noteObj.valid()).toBeFalsy();
   });
 });
 
