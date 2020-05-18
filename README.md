@@ -5,7 +5,7 @@
 ### Author: Raghad Al-Quran
 
 ### Links and Resources
-- [submission PR]()
+- [submission PR](https://github.com/raghadalquran/notes/pull/1)
 
 ### Modules
 #### `Node.js`
@@ -26,4 +26,4 @@
 - Test: `./index.js (anything except [--add || -a || --a]) 'My first NOTE'` => 'error occurs'
 
 #### UML
-![UML Diagram]()
+![UML Diagram](img/IMG_3557.jpeg)
