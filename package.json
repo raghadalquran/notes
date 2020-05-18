@@ -19,5 +19,8 @@
   "homepage": "https://github.com/raghadalquran/notes#readme",
   "dependencies": {
     "minimist": "^1.2.5"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1"
   }
 }
