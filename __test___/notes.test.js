@@ -8,10 +8,11 @@ describe('Notes Module', ()=> {
     
   it('test the note if the console.log appears', ()=> {
     let newObj = {
-      note : {acion: 'add', payload: 'hello'},
+      note : {action: 'add', payload: 'hello'},
+      id : {action: 'add', payload: 'hello'},
     };
     let note = new Notes(newObj);
-    note.add();
+    note.add(newObj);
     expect(console.log).toHaveBeenCalled();
   });
 
