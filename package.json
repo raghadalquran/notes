@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint-me":"eslint **/*.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/raghadalquran/notes#readme",
   "dependencies": {
+    "lint": "^0.7.0",
     "minimist": "^1.2.5"
   }
 }
