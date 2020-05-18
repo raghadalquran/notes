@@ -26,4 +26,4 @@
 - Test: `./index.js (anything except [--add || -a || --a]) 'My first NOTE'` => 'error occurs'
 
 #### UML
-![UML Diagram](img/IMG_3557.jpeg)
+![UML Diagram](./img/IMG_3557.jpeg)
