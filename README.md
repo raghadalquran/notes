@@ -1,11 +1,12 @@
-# LAB - 01
+# LAB - 02
 
 ## Node Ecosystem
 
 ### Author: Raghad Al-Quran
 
 ### Links and Resources
-- [submission PR](https://github.com/raghadalquran/notes/pull/2)
+- [submission PR for lab02](https://github.com/raghadalquran/notes/pull/3)
+- [submission PR for lab01](https://github.com/raghadalquran/notes/pull/2)
 
 ### Modules
 #### `Node.js`
