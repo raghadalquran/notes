@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <coverage generated="1589848086782" clover="3.2.0">
   <project timestamp="1589848086783" name="All files">
     <metrics statements="26" coveredstatements="22" conditionals="16" coveredconditionals="11" methods="5" coveredmethods="4" elements="47" coveredelements="37" complexity="0" loc="26" ncloc="26" packages="1" files="2" classes="2"/>
@@ -31,8 +32,8 @@
       <line num="14" count="1" type="stmt"/>
       <line num="15" count="1" type="stmt"/>
       <line num="16" count="1" type="stmt"/>
-      <line num="17" count="1" type="stmt"/>
-      <line num="24" count="1" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+
     </file>
   </project>
 </coverage>

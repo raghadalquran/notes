@@ -1,12 +1,11 @@
 {
   "name": "notes",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Node Ecosystem",
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage",
-    "lint-me": "eslint **/*.js"
-
+    "lint": "eslint **/*.js"
   },
   "repository": {
     "type": "git",
@@ -21,11 +20,15 @@
   "homepage": "https://github.com/raghadalquran/notes#readme",
   "dependencies": {
     "eslint": "^7.0.0",
-    "lint": "^0.7.0",
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.5",
+    "mongoose": "^5.9.15",
+    "superagent": "^5.2.2"
   },
   "devDependencies": {
     "jest": "^26.0.1",
     "lint": "^0.7.0"
+  },
+  "directories": {
+    "lib": "lib"
   }
 }
