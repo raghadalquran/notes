@@ -1,20 +1,29 @@
 'use strict';
 
-const Notes = require('../lib/notes.js');
+require('@code-fellows/supergoose');
 
-jest.spyOn(global.console, 'log');
+const NotesColl = require('../models/notes-collection');
 
-describe('Notes Module', ()=> {
-    
-  it('test the note if the console.log appears', ()=> {
-    let newObj = {
-      note : {action: 'add', payload: 'hello'},
-      id : {action: 'add', payload: 'hello'},
-    };
-    let note = new Notes(newObj);
-    note.add(newObj);
-    expect(console.log).toHaveBeenCalled();
+describe('Notes Collection Model', ()=> {
+  let obj = {text: 'test note', category: 'life'};
+  it('can create() a new notes ', ()=> {
+    return NotesColl.create(obj)
+      .then(record => {
+        Object.keys(obj).forEach(key => {
+          expect(record[key]).toEqual(obj[key]);
+        });
+      });
   });
 
-
+  it('can get() a notes', ()=> {
+    return NotesColl.create(obj)
+      .then(record => {
+        return NotesColl.get({category: record.category})
+          .then(myNotes => {
+            Object.keys(obj).forEach((key , index)=> {
+              expect(myNotes[index][key]).toEqual(obj[key]);
+            });
+          });
+      });
+  });
 });
