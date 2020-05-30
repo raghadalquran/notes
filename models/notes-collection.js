@@ -15,14 +15,13 @@ class Notes {
     return await notes.find(category);
   }
   
-  async update(_id, record) {
-    return await notes.findByIdAndUpdate(_id, record, { new: true });
+  async update(obj) {
+    return await notes.findByIdAndUpdate(obj.id, {text: obj.text}, { new: true });
   }
   
   async delete(_id) {
     return await notes.findByIdAndDelete(_id);
   }
-  
 }
   
 module.exports = new Notes();
